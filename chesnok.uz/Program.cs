@@ -49,6 +49,23 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//app.Map("/usingmapbranch", builder =>
+//{
+//    builder.Use(async (context, next) =>
+//    {
+//        Console.WriteLine("MapBranch Logic in the use method before the next delegate");                                                                               
+//        await next.Invoke();
+//        Console.WriteLine("MapBranch Logic in the use method after the next delegate");
+//    });
+
+//    builder.Run(async context =>
+//    {
+//        Console.WriteLine("Writing the response to the client in the run method");
+//        await context.Response.WriteAsync("Hello from the middleware component");
+//    });
+
+//});
+
 app.UseExceptionHandling();
 
 app.UseRequestLogging();

@@ -12,7 +12,7 @@ public class FoodItemDto
     public double Fats { get; set; }
 }
 
-public class CreateFoodItemDto
+public class CreateFoodItemDto 
 {
     public string Name { get; set; }
     public int Calories { get; set; }
